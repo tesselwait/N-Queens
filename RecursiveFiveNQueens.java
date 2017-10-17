@@ -108,7 +108,7 @@ public class RecursiveFiveNQueens {
 		setBoard();
 		printLocs();
 		System.out.println();
-		//printBoard();
+		printBoard();//comment out for boards m > 4
 	}
 	
 	//Simple Coordinate class
@@ -130,8 +130,14 @@ public class RecursiveFiveNQueens {
 		}
 	}//end class
 	
+	//  comment out printBoard() in runTest() for m > 4
 	public static void main(String[] args) {	
-		RecursiveFiveNQueens rl = new RecursiveFiveNQueens(5); final long startTime = System.currentTimeMillis(); System.out.print("Start time: "+startTime);
-		rl.runTest(); final long endTime = System.currentTimeMillis(); System.out.print("   End Time: "+endTime); System.out.println("Total execution time: " + (endTime - startTime)+" milliseconds" );
+		RecursiveFiveNQueens rl = new RecursiveFiveNQueens(4);//"new RecursiveFiveNQueens(Integer.parseInt(args[0]));"
+		final long startTime = System.currentTimeMillis();
+		System.out.print("Start time: "+startTime);
+		rl.runTest();
+		final long endTime = System.currentTimeMillis();
+		System.out.print("   End Time: "+endTime);
+		System.out.println("Total execution time: " + (endTime - startTime)+" milliseconds" );
 	}
 }
