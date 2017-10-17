@@ -1,5 +1,5 @@
 import java.util.ArrayList;
-
+// Author: Robert Larson
 public class RecursiveFiveNQueens {
 	ArrayList<Coordinate> queens = new ArrayList<Coordinate>();
 	int size;
