@@ -13,8 +13,7 @@ public class RecursiveFiveNQueens {
 		board = new int[size][size];
 		first = new Coordinate(size/2, size/2);
 	}
-	
-	//////////////////////////	
+		
 	//Template Pattern:
 	// - - - * - //
 	// * - - - - //
