@@ -15,7 +15,7 @@ public class RecursiveFiveNQueens {
 	}
 	
 	//////////////////////////	
-	//SUPERPATTERN:
+	//Template Pattern:
 	// - - - * - //
 	// * - - - - //
 	// - - * - - //  5^m by 5^m
@@ -105,11 +105,11 @@ public class RecursiveFiveNQueens {
 	
 	//Solve board for board size 5^s
 	public void runTest() {
-			recurBoard(getFirst(), getM());
-			setBoard();
-			printLocs();
-			System.out.println();
-			//printBoard();
+		recurBoard(getFirst(), getM());
+		setBoard();
+		printLocs();
+		System.out.println();
+		//printBoard();
 	}
 	
 	//Simple Coordinate class
