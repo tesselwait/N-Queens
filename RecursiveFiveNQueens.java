@@ -1,11 +1,11 @@
 import java.util.ArrayList;
 // Author: Robert Larson
 public class RecursiveFiveNQueens {
-	ArrayList<Coordinate> queens = new ArrayList<Coordinate>();
-	int size;
-	int m;
-	int[][] board;
-	Coordinate first;
+	private ArrayList<Coordinate> queens = new ArrayList<Coordinate>();
+	private int size;
+	private int m;
+	private int[][] board;
+	private Coordinate first;
 	
 	public RecursiveFiveNQueens(int g) {
 		m=g;
@@ -20,6 +20,7 @@ public class RecursiveFiveNQueens {
 	// - - * - - //  5^m by 5^m
 	// - - - - * //
 	// - * - - - //
+	//
 	//Recursively solves a 5^m by 5^m N-Queens board.
 	public void recurBoard(Coordinate loc, int r) {
 		if(r==1) {
@@ -61,10 +62,10 @@ public class RecursiveFiveNQueens {
 		System.out.println("Board: "+board.length+" by "+board.length);
 		System.out.println("Total Queens: "+ queens.size());
 		System.out.println("Diagonal collisions == "+diagonalCollisions());
+		System.out.println();
 	}
 	
-	//Prints the grid.  Spaces after '-' and '+' are for//
-	//maintaining even whitespace on horizontal and vertical//
+	//Prints the grid
 	public void printBoard()
 	{
 	   for(int i = 0; i < size; i++)
@@ -107,8 +108,7 @@ public class RecursiveFiveNQueens {
 		recurBoard(getFirst(), getM());
 		setBoard();
 		printLocs();
-		System.out.println();
-		printBoard();//comment out for boards m > 4
+		printBoard();
 	}
 	
 	//Simple Coordinate class
@@ -128,16 +128,11 @@ public class RecursiveFiveNQueens {
 		public int getX() {
 			return x;
 		}
-	}//end class
+	}
 	
-	//  comment out printBoard() in runTest() for m > 4
 	public static void main(String[] args) {	
-		RecursiveFiveNQueens rl = new RecursiveFiveNQueens(4);//"new RecursiveFiveNQueens(Integer.parseInt(args[0]));"
-		final long startTime = System.currentTimeMillis();
-		System.out.print("Start time: "+startTime);
+		int seed = Integer.parseInt(args[0]);
+		RecursiveFiveNQueens rl = new RecursiveFiveNQueens(seed);
 		rl.runTest();
-		final long endTime = System.currentTimeMillis();
-		System.out.print("   End Time: "+endTime);
-		System.out.println("Total execution time: " + (endTime - startTime)+" milliseconds" );
 	}
 }
