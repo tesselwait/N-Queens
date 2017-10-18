@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 // Author: Robert Larson
-// October, 2017
+// October 2017
 public class RecursiveFiveNQueens {
 	private int m;
 	private int size;
