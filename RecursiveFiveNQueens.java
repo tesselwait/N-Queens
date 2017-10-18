@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 // Author: Robert Larson
+// October, 2017
 public class RecursiveFiveNQueens {
 	private ArrayList<Coordinate> queens = new ArrayList<Coordinate>();
 	private int size;
@@ -45,7 +46,7 @@ public class RecursiveFiveNQueens {
 			for(int j=0; j<size; j++)
 				board[i][j] = 0;
 		for(Coordinate loc: queens)
-			board[(int)loc.getY()][(int)loc.getX()] = 1;
+			board[loc.getY()][loc.getX()] = 1;
 	}
 	
 	//Lists coordinates of queens, total queens, and results of diagonal collision check
