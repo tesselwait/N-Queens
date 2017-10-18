@@ -1,18 +1,18 @@
 import java.util.ArrayList;
-// Author: Robert Larson
-// October, 2017
+// Author: Robert Larson - October, 2017
 public class RecursiveFiveNQueens {
-	private ArrayList<Coordinate> queens = new ArrayList<Coordinate>();
-	private int size;
 	private int m;
+	private int size;
 	private int[][] board;
 	private Coordinate first;
+	private ArrayList<Coordinate> queens;
 	
 	public RecursiveFiveNQueens(int g) {
 		m=g;
 		size = (int)(Math.pow(5, m));
 		board = new int[size][size];
 		first = new Coordinate(size/2, size/2);
+		queens =  = new ArrayList<Coordinate>(size);
 	}
 		
 	//Template Pattern:
