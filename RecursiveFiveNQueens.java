@@ -54,7 +54,7 @@ public class RecursiveFiveNQueens {
 	public void printLocs() {
 		int i = 0;
 		for(Coordinate loc: queens) {
-			System.out.print("[X: " + loc.getX() + ", Y: " + loc.getY()+ "]  ");
+			System.out.print("[x: " + loc.getX() + " y: " + loc.getY()+ "]  ");
 			if((i%10)-9==0)
 				System.out.println();
 			i++;
