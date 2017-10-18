@@ -20,7 +20,6 @@ public class RecursiveFiveNQueens {
 	// - - * - - //  5^m by 5^m
 	// - - - - * //
 	// - * - - - //
-	//
 	//Recursively solves a 5^m by 5^m N-Queens board.
 	public void recurBoard(Coordinate loc, int r) {
 		if(r==1) {
