@@ -12,7 +12,7 @@ public class RecursiveFiveNQueens {
 		size = (int)(Math.pow(5, m));
 		board = new int[size][size];
 		first = new Coordinate(size/2, size/2);
-		queens =  = new ArrayList<Coordinate>(size);
+		queens = new ArrayList<Coordinate>(size);
 	}
 		
 	//Template Pattern:
