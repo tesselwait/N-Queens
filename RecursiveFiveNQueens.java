@@ -73,7 +73,7 @@ public class RecursiveFiveNQueens {
 	   {
 	      for(int j = 0; j < size; j++)
 	      {
-	    	  if(board[(int)i][(int)j]==0)
+	    	  if(board[i][j]==0)
 	    		  System.out.print("-");
 	    	  else
 	    		  System.out.print("Q");
