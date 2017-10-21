@@ -146,7 +146,7 @@ public class HockeyQueensv01 {
 		
 		
 	public static void main(String[] args) {	
-		HockeyQueensv01 rl = new HockeyQueensv01();//integer.parseint(args[0]);
+		HockeyQueensv01 rl = new HockeyQueensv01();
 		rl.runTest();
 	}
 }
