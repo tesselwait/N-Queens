@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 //Robert Larson
-//Novel 8-Queens fundamental solution -> 1,000-Queens solution
+//8-Queens --> 1,000-Queens
 public class EightCubedQueens {
 	private ArrayList<Coordinate> queens;
 	private int size;
