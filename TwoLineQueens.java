@@ -119,7 +119,7 @@ public class TwoLineQueens {
 	}
 	
 	public void incrementBoard(int a) {
-		board = new int[(board.length)+a][(board.length+a)];
+		board = new int[board.length+a][board.length+a];
 	}
 	
 	
