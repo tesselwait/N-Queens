@@ -24,7 +24,7 @@ public class TwoLineQueens {
 				queens.add(new Coordinate((size/2)+i, (i*2)));
 			}
 		}
-		if(size%6==1) {
+		if(size%6==1||size%6==5) {
 			for(int i = 0; i<size/2; i++) {
 				queens.add(new Coordinate(i, (i*2)+1));
 				queens.add(new Coordinate((size/2)+i, (i*2)));
@@ -43,16 +43,7 @@ public class TwoLineQueens {
 				queens.add(new Coordinate((size/2)+i, (i*2)));
 			}
 			queens.add(new Coordinate(size-1, size-1));
-		}*/
-		if(size%6==5) {
-			for(int i = 0; i<size/2; i++) {
-				queens.add(new Coordinate(i, (i*2)+1));
-				queens.add(new Coordinate((size/2)+i, (i*2)));
-
-			}
-			queens.add(new Coordinate(size-1, size-1));
-		}
-		
+		}*/	
 	}
 	
 	public void setBoard() {
