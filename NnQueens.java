@@ -57,10 +57,10 @@ public class NnQueens {
 			for(int j = 0; j < size; j++)
 			{
 				if(board[i][j]==0)
-					System.out.print("-");
+					System.out.print("- ");
 				else
 					if(board[i][j]==1)
-						System.out.print("Q");
+						System.out.print("Q ");
 			}
 			System.out.println();
 		}
