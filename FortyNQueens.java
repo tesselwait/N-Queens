@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-//Author: Robert Larson
 //1,000 by 1,000 board solution.
 public class FortyNQueens {
 private ArrayList<Coordinate> queens;
