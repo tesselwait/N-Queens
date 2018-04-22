@@ -1,7 +1,4 @@
-N-Queens
-Programs related to solving N-Queens boards.
-RecursiveFiveNQueens.java ran differently on Linux and Windows.  The Windows version ran in error of the
-base pattern, however the resulting boards were surprisingly still valid N-Queens board solutions as shown.
+
 - - - - - - - - - - - - - - - - Q - - - - - - - - 
 - - - - - - - - - - - - - - - - - - - Q - - - - - 
 - - - - - - - Q - - - - - - - - - - - - - - - - - 
