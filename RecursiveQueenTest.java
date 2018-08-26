@@ -28,11 +28,15 @@ public class RecursiveQueenTest {
 		basePattern.add(new Point(9,3));
 	}
 	
+	//alternative 2d int array initialization
 	public void generateSeedList(int[][] seedArray){
 		for(int i=0; i<seedArray.length; i++)
 		basePattern.add(new Point(seedArray[i][0], seedArray[i][1]));
 	}
 	
+	//Test algo runs the two diagonals of every point simulating a check for diagonals collisions\
+	//in the adjacent vertical and horizontal copies of base grid.  A necessary and sufficient condition\
+	//for recursive expandability.
 	public boolean recursiveTest(ArrayList<Point> base) {
 		for(Point n: base) {
 			for(int i=1; i<base.size(); i++) {
