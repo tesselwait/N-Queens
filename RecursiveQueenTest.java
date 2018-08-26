@@ -3,7 +3,8 @@ import java.awt.Point;
 
 //In place testing of n-Queens solutions for recursive expansion.\
 //If a base pattern passes the test than that n-Queens solution can be used\
-//to recursively expand any know n-Queens solution.
+//to recursively expand any known n-Queens solution via substituting\
+//every point in the solution with the tested solution.
 public class RecursiveQueenTest {
 	ArrayList<Point> basePattern;
 	
