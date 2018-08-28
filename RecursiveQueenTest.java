@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.awt.Point;
 
 //In place testing of n-Queens solutions for recursive expansion.\
-//If a base pattern passes the test than that n-Queens solution can be used\
+//If a valid n-Queens solution passes the test than that n-Queens solution can be used\
 //to recursively expand any known n-Queens solution via substituting\
 //every point in the solution with the tested solution.
 public class RecursiveQueenTest {
@@ -35,7 +35,7 @@ public class RecursiveQueenTest {
 	}
 	
 	//Test algo runs the two diagonals of every point simulating a check for diagonals collisions\
-	//in the adjacent vertical and horizontal copies of base grid.  A necessary and sufficient condition\
+	//with the adjacent vertical and horizontal copies of base grid.  A necessary and sufficient condition\
 	//for recursive expandability.
 	public boolean recursiveTest(ArrayList<Point> base) {
 		for(Point n: base) {
