@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-[https] [://] [www.] [sciencedirect.com/science/article/pii/S0012365X07010394]
+//[https] [://] [www.] [sciencedirect.com/science/article/pii/S0012365X07010394]
 //N-Queens board solutions for all n where n%6 != 2||3
 public class TwoLineQueens {
 	private ArrayList<Coordinate> queens;
