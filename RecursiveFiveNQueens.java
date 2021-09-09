@@ -1,5 +1,5 @@
 import java.util.ArrayList;
-//Recursive version -- printBoard() commented out for space
+//Recursive version
 public class RecursiveFiveNQueens {
 	ArrayList<Coordinate> queens = new ArrayList<Coordinate>();
 	int size;
@@ -73,9 +73,9 @@ public class RecursiveFiveNQueens {
 	      for(int j = 0; j < size; j++)
 	      {
 	    	  if(board[(int)i][(int)j]==0)
-	    		  System.out.print("-");
+	    		  System.out.print("- ");
 	    	  else
-	    		  System.out.print("Q");
+	    		  System.out.print("Q ");
 	      }
 	      System.out.println();
 	   }
@@ -109,7 +109,7 @@ public class RecursiveFiveNQueens {
 			setBoard();
 			printLocs();
 			System.out.println();
-			//printBoard();
+			printBoard();
 	}
 
 	//Simple Coordinate class
@@ -132,7 +132,7 @@ public class RecursiveFiveNQueens {
 	}//end class
 
 	public static void main(String[] args) {	
-		RecursiveFiveNQueens rl = new RecursiveFiveNQueens(5); final long startTime = System.currentTimeMillis();
+		RecursiveFiveNQueens rl = new RecursiveFiveNQueens(3); final long startTime = System.currentTimeMillis();
 		rl.runTest(); final long endTime = System.currentTimeMillis();  System.out.println("Total execution time: " + (endTime - startTime)+" milliseconds" );
 	}
 }
