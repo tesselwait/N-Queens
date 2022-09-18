@@ -15,7 +15,6 @@ public class IterativeAdjustQueens {
 	public void solve() {
 		final long startTime = System.currentTimeMillis();
 		System.out.println(size+"-Queens Solution:");
-
 		int count=0;
 		setQueens();
 		int idx=0;
@@ -30,7 +29,6 @@ public class IterativeAdjustQueens {
 				idx=0;
 		}
 		printBoard();
-
 		final long endTime = System.currentTimeMillis();
 		System.out.println("Time: " + (endTime - startTime)/1000.0+" seconds");
 		System.out.println();
@@ -63,7 +61,6 @@ public class IterativeAdjustQueens {
 			if(board[i][y] == 1 && i != x)
 				collisions++;
 		}
-
 		int t = 1;
 		while(x-t >= 0 && x-t<size && y-t>-1 && y-t < size) {
 			if(board[x-t][y-t]==1)
@@ -105,16 +102,13 @@ public class IterativeAdjustQueens {
 			int loc = gen.nextInt(size);
 			board[i][loc] = 1;
 			queens[i]=loc;
-
 		}
 	}
 
 	public void printBoard()
 	{
-		for(int i = 0; i < size; i++)
-		{
-			for(int j = 0; j < size; j++)
-			{
+		for(int i = 0; i < size; i++){
+			for(int j = 0; j < size; j++){
 				if(board[i][j]==0)
 					System.out.print("- ");
 				else
