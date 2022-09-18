@@ -96,7 +96,6 @@ public class IterativeAdjustQueens {
 		return true;
 	}
 
-
 	public void setQueens() {
 		for(int i=0; i<size; i++) {
 			int loc = gen.nextInt(size);
