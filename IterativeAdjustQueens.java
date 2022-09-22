@@ -28,8 +28,8 @@ public class IterativeAdjustQueens {
 			if(idx==size)
 				idx=0;
 		}
-		printBoard();
 		final long endTime = System.currentTimeMillis();
+		printBoard();
 		System.out.println("Time: " + (endTime - startTime)/1000.0+" seconds");
 		System.out.println();
 	}
